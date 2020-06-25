@@ -4,12 +4,10 @@ import {Card, CardImg, CardText, CardBody, CardTitle} from 'reactstrap';
 class DishDetail extends Component {
     constructor(props){
         super(props);
+
     }
 
-    
-
-    render()
-    {
+    renderDish(dish){
         var commentSection = null;
         if (this.props.dish != null){
             commentSection = this.props.dish.comments.map((comment) =>{
@@ -36,9 +34,9 @@ class DishDetail extends Component {
                             <CardImg width="100%" src={this.props.dish.image} alt={this.props.dish.name}></CardImg>
                             <CardBody>
                                 <CardTitle>
-                                    <h3>
+                                    <h4>
                                         {this.props.dish.name}
-                                    </h3>
+                                    </h4>
                                 </CardTitle>
                                 <CardText>
                                     {this.props.dish.description}
@@ -49,9 +47,9 @@ class DishDetail extends Component {
                     <div className="col-md-5 m-1 col-12">
                         <CardBody>
                             <CardTitle>
-                                <h3>
+                                <h4>
                                     Comments
-                                </h3>
+                                </h4>
                             </CardTitle>
                             {commentSection}
                         </CardBody>
@@ -64,9 +62,15 @@ class DishDetail extends Component {
                 <div></div>
             )
         }
-
-        
     }
-}
+
+
+    render() {
+        return(
+            <div className="container">
+                {this.renderDish(this.props.dish)}
+            </div>
+        )};
+};
 
 export default DishDetail;
