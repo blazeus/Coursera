@@ -13,13 +13,13 @@ class DishDetail extends Component {
             commentSection = this.props.dish.comments.map((comment) =>{
                 return(
                     <div key={comment.id}>
-                        <CardText className="unstyled-list">
-                            <p>
-                                {comment.comment}
-                            </p>
-                            <p>
-                                --{comment.author},{comment.date}
-                            </p>
+                        <CardText className="list-unstyled">
+                                <p>
+                                    {comment.comment}
+                                </p>
+                                <p>
+                                    --{comment.author},{comment.date}
+                                </p>
                         </CardText>
                     </div>
                 )
