@@ -1,5 +1,6 @@
 import React from 'react';
 import {Media} from 'reactstrap';
+import { baseUrl } from '../shared/baseUrl';
 
 function RenderLeader({leader}) {
         return (
