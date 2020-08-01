@@ -1,0 +1,118 @@
+  @font-face {
+    font-family: default;
+    src: url(/assets/fonts/BellotaText-Regular.ttf); }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; }
+  
+  *::-webkit-scrollbar {
+    width: 0.8rem; }
+  
+  *::-webkit-scrollbar-track {
+    background: none; }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 3px solid black; }
+  
+  body {
+    background-color: #271C85;
+    font-family: default; }
+  
+  .nav-blue {
+    background-color: #4B69E8;
+    font-size: 1.2rem; }
+  
+  .nav-orange {
+    background-color: #E36B30;
+    font-size: 1.2rem; }
+  
+  .navbar-nav li {
+    width: 8rem;
+    margin: 1rem 0 1rem 6rem; }
+  
+  @media only screen and (max-width: 768px) {
+    .navbar-nav li {
+      margin: 2vh 1vh 2vh 0.2vh; } }
+  
+  .btn {
+    width: 9rem;
+    box-shadow: 0px 1.18992px 2.35217px rgba(0, 0, 0, 0.0562291), 0px 2.85954px 5.65259px rgba(0, 0, 0, 0.0807786), 0px 5.38427px 10.6433px rgba(0, 0, 0, 0.1), 0px 9.60461px 18.9859px rgba(0, 0, 0, 0.119221), 0px 17.9644px 35.511px rgba(0, 0, 0, 0.143771), 0px 43px 85px rgba(0, 0, 0, 0.2); }
+  
+  .introduction {
+    margin-top: 23vh; }
+    .introduction .row div h1 {
+      margin-top: 13vh; }
+    .introduction .row div p {
+      font-size: 2rem; }
+    .introduction div img {
+      max-height: 70vh; }
+    @media only screen and (max-width: 768px) {
+      .introduction {
+        margin-top: 1vh; }
+        .introduction .row div p {
+          font-size: 1.3rem; } }
+  
+  .article {
+    background-image: url(/assets/Img/19366.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10vh; }
+    .article .card {
+      background: #4B69E8;
+      box-shadow: 0px 2.57617px 5.39278px rgba(0, 0, 0, 0.0983083), 0px 6.51533px 13.6387px rgba(0, 0, 0, 0.126409), 0px 13.2907px 27.8218px rgba(0, 0, 0, 0.145616), 0px 27.3762px 57.3076px rgba(0, 0, 0, 0.164659), 0px 75px 157px rgba(0, 0, 0, 0.21);
+      border-radius: 5px;
+      margin-top: 10vh;
+      margin-bottom: 10vh; }
+    .article p {
+      color: white;
+      font-size: 1.5rem; }
+  
+  footer {
+    margin: 0px;
+    background-color: #141414;
+    padding: 5vh 10vh 5vh 10vh; }
+    footer li {
+      color: white; }
+      footer li a {
+        color: white;
+        font-size: 1.2rem; }
+    footer .input-group {
+      margin-top: 8vh;
+      box-shadow: 0px 1.18992px 2.35217px rgba(0, 0, 0, 0.0562291), 0px 2.85954px 5.65259px rgba(0, 0, 0, 0.0807786), 0px 5.38427px 10.6433px rgba(0, 0, 0, 0.1), 0px 9.60461px 18.9859px rgba(0, 0, 0, 0.119221), 0px 17.9644px 35.511px rgba(0, 0, 0, 0.143771), 0px 43px 85px rgba(0, 0, 0, 0.2); }
+      footer .input-group input {
+        margin: 0;
+        color: white;
+        height: 4rem;
+        border-right-color: #1E1E1E;
+        background: #1E1E1E;
+        border-color: black; }
+      footer .input-group input::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.4rem;
+        font-weight: normal;
+        padding-left: 2rem; }
+      footer .input-group .input-group-text {
+        margin: 0;
+        padding: 0.8rem;
+        border-color: #141414;
+        border-left-color: #1E1E1E;
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.3);
+        background: #1E1E1E; }
+    footer .search-text {
+      color: white;
+      font-size: 1.3rem;
+      margin: 5vh 1vh 5vh 1vh;
+      font-style: italic; }
+    @media only screen and (max-width: 768px) {
+      footer {
+        padding: 1vh; }
+        footer li a {
+          font-size: 1rem; }
+        footer .search-text {
+          font-size: 1rem; } }
+  
