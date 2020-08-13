@@ -8,7 +8,7 @@ function RenderLeader({leader}) {
                 <Media className="m-4">
                     <Media left>
                         <Media className="mr-5">
-                            <img src={leader.image} alt="Leader Image"/>
+                            <img src={baseUrl + leader.image} alt="Leader Image"/>
                         </Media>
                     </Media>
                     <Media body>
